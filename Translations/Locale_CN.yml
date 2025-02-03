@@ -1,105 +1,63 @@
-
-# Full color code support and some variables
-
-# Keep in mind that variables wont work for some lines, when it will for anothers :)
-
-# Just keep them where there are now and everything will be ok :)
-
-# Some lines can have global variables set. For player who will be effected. In example /heal Zrips then Zrips data will be used
-
-# [serverName] to show server name
-
-# [playerName] to show target player name
-
-# [playerDisplayName] to show target player display name
-
-# [lvl] to show target player level
-
-# [exp] to show target player total exp
-
-# [hp] to show target player health
-
-# [maxHp] to show target player max health
-
-# [hunger] to show target player hunger level
-
-# [gameMode] to show target player gamemode
-
-# [prefix] to show target player prefix if possible
-
-# [suffix] to show target player suffix if possible
-
-# Sender is console or player who performs command. In example Zrips performs /heal Zhax then Zrips data will be used
-
-# [senderName] to show Sender player name
-
-# [senderDisplayName] to show Sender player display name
-
-# [senderLvl] to show Sender player level
-
-# [senderExp] to show Sender player total exp
-
-# [senderHp] to show Sender player health
-
-# [senderMaxHp] to show Sender player max health
-
-# [senderHunger] to show Sender player hunger level
-
-# [senderGameMode] to show Sender player gamemode
-
-# [senderPrefix] to show Sender player prefix if possible
-
-# [senderSuffix] to show Sender player suffix if possible
-
-# Source is player which is being used for extra info. In example Zrips performs /tp Zhax Zrips then Zhax data will be used as its location is being taken for new player location
-
-# [sourceName] to show source player name
-
-# [sourceDisplayName] to show source player display name
-
-# [sourceLvl] to show source player level
-
-# [sourceExp] to show source player total exp
-
-# [sourceHp] to show source player health
-
-# [sourceMaxHp] to show source player max health
-
-# [sourceHunger] to show source player hunger level
-
-# [sourceGameMode] to show source player gamemode
-
-# [sourcePrefix] to show source player prefix if possible
-
-# [sourceSuffix] to show source player suffix if possible
-
-# ***********************************************
-
-# Some lines supports option to send them to custom places, like action bar, title, sub title or even create JSON/clickable messages
-
-# If line starts with !toast! then player will get toast message (advancement popup, only 1.12 and up). Some extra variables can be used to define type and icon. example: !toast! -t:goal -icon:paper Hello world!
-
-# If line starts with !actionbar! then player will get action bar message defined after this variable
-
-# If line starts with !actionbar:[seconds]! then player will get action bar message for defined amount of time
-
-# If line starts with !broadcast! then everyone will receive message. You can add extra !toast! !actionbar! or !title! to send message for everyone to specific place, in example !broadcast!!title!
-
-# If line starts with !customtext:[cTextName]! then custom text will be taken by name provided and shown for player. In case its used after !broadcast! then everyone who is online will get this custom text message
-
-# If line starts with !title! then player will get title message defined after this variable, in addition it can contain !subtitle! which will add subtitle message. Optional time can be defined with !title:4.5! which will keep title message for 4.5 seconds
-
-# If line starts with !bossbar:[name]-[timer]! then player will get bossbar message defined after this variable, in addition you can define how long this message will be visible. You need to define bossbar name which can be anything you want, but lines with same name will override each other to prevent stacking
-
-# 
-
-# 
-
-# 
-
-# ATTENTION! As of 9.0.0.0 CMI version some of the locale lines got moved to CMILib file. This is to centralize some of most used ones across multiple plugins.
-
-# After you update locale in CMILib file perform /CMIL RELOAD command for changes to take effect
+# 全彩代码支持和一些变量
+# 请记住,对于某些行,变量不起作用,而对于其他行,则会起作用 :)
+# 只需将它们保留在现在的位置,一切都会没问题 :)
+# 有些行可以设置全局变量.例如,对于将受到影响的玩家.例如 /heal Zrips,那么将使用 Zrips 的数据
+# [serverName] 显示服务器名称
+# [playerName] 显示目标玩家名称
+# [playerDisplayName] 显示目标玩家显示名称
+# [lvl] 显示目标玩家等级
+# [exp] 显示目标玩家总经验
+# [hp] 显示目标玩家生命值
+# [maxHp] 显示目标玩家最大生命值
+# [hunger] 显示目标玩家饥饿值
+# [gameMode] 显示目标玩家游戏模式
+# [prefix] 显示目标玩家前缀(如果可能)
+# [suffix] 显示目标玩家后缀(如果可能)
+#
+# 发送者是执行命令的控制台或玩家.例如,Zrips 执行 /heal Zhax,那么将使用 Zrips 的数据
+# [senderName] 显示发送者玩家名称
+# [senderDisplayName] 显示发送者玩家显示名称
+# [senderLvl] 显示发送者玩家等级
+# [senderExp] 显示发送者玩家总经验
+# [senderHp] 显示发送者玩家生命值
+# [senderMaxHp] 显示发送者玩家最大生命值
+# [senderHunger] 显示发送者玩家饥饿值
+# [senderGameMode] 显示发送者玩家游戏模式
+# [senderPrefix] 显示发送者玩家前缀(如果可能)
+# [senderSuffix] 显示发送者玩家后缀(如果可能)
+#
+# 源是被用作额外信息的玩家.例如,Zrips 执行 /tp Zhax Zrips,那么将使用 Zhax 的数据,因为其位置将用于新玩家的位置
+# [sourceName] 显示源玩家名称
+# [sourceDisplayName] 显示源玩家显示名称
+# [sourceLvl] 显示源玩家等级
+# [sourceExp] 显示源玩家总经验
+# [sourceHp] 显示源玩家生命值
+# [sourceMaxHp] 显示源玩家最大生命值
+# [sourceHunger] 显示源玩家饥饿值
+# [sourceGameMode] 显示源玩家游戏模式
+# [sourcePrefix] 显示源玩家前缀(如果可能)
+# [sourceSuffix] 显示源玩家后缀(如果可能)
+#
+# 有些行支持将它们发送到自定义位置的选项,比如操作栏、标题、副标题,甚至创建JSON/可点击消息
+# 如果行以!toast!开头,玩家将收到提示消息(进度弹出窗口,仅限1.12及以上版本).一些额外的变量可以用来定义类型和图标.例如:!toast! -t:goal -icon:paper 你好世界!
+# 如果行以!actionbar!开头,玩家将收到此变量后定义的操作栏消息
+# 如果行以!actionbar:[秒数]!开头,玩家将在定义的时间内收到操作栏消息
+# 如果行以!broadcast!开头,则每个人都将收到消息.您可以添加额外的!toast! !actionbar!或!title!来将消息发送给每个人的特定位置,例如:!broadcast!!title!
+# 如果行以!customtext:[cTextName]!开头,则将按提供的名称获取自定义文本,并显示给玩家.如果在!broadcast!之后使用,则在线的每个人都将获得此自定义文本消息
+# 如果行以!title!开头,则玩家将在此变量后定义的标题消息,此外它可以包含!subtitle!,这将添加副标题消息.可以使用!title:4.5!定义可选时间,这将保持标题消息4.5秒
+# 如果行以!bossbar:[名称]-[计时器]!开头,则玩家将在此变量后定义的bossbar消息,此外您可以定义此消息将可见的时间.您需要定义bossbar名称,它可以是任何您想要的,但具有相同名称的行将互相覆盖,以防止堆叠
+#
+# 要包含可点击消息:<T>文本</T><H>悬停文本</H><C>命令</C><SC>建议文本</SC>
+# <T>和</T>是必需的,其他是可选的
+# 使用/n来换行
+# 要有多个JSON消息,请使用<Next>
+# <C>作为点击的玩家执行命令
+# <CC>一次从控制台执行命令
+# <CCI>每次玩家点击文本时从控制台执行命令
+# <URL>包括URL
+#
+# 注意!从9.0.0.0 CMI版本开始,一些区域设置行已移至CMILib文件.这是为了集中一些跨多个插件中最常用的区域设置.
+# 在您更新CMILib文件中的区域设置后,执行/CMIL RELOAD命令以使更改生效
 
 info:
   Same: '&c无法打开您自己的背包进行编辑!'
@@ -153,7 +111,7 @@ info:
   noSpam: '!title!&c请勿刷屏!'
   noCmdSpam: '!title!&c请勿刷屏命令!'
   spamConsoleInform: '&c玩家 (&7[playerName]&c) 触发了 (&7[rules]&c) 聊天过滤器:&r [message]'
-  # This line can have extra variables: [totalUsers] [onlinePlayers]
+  # 该行可以有额外的变量: [totalUsers] [onlinePlayers]
   FirstJoin: '&e欢迎 &6[playerDisplayName] &e加入我们的服务器!'
   LogoutCustom: ' &6[playerDisplayName] &e离开游戏'
   LoginCustom: ' &6[playerDisplayName] &e加入游戏'
@@ -217,9 +175,9 @@ info:
   noWorldAccess: '&c没有世界权限'
   IncorrectColor: '&4颜色定义错误!'
   time:
-    # Mainly for placeholder playtime output
-    # Use + sign at the start of line to force include it even if specific and previous time values are 0
-    # Use - sign at the start of line if you want to include it only if its value isn't 0. If entire output results into empty line, then we will output seconds value
+    # 主要用于播放时间占位符输出
+    # 在行首使用+号来强制包含它,即使特定和先前的时间值为0
+    # 在行首使用-号,如果你只想在其值不为0时包含它.如果整个输出为空行,则输出秒值
     days: '&2[d]&7天:'
     hours: '&2[h]&7小时 '
     minutes: '&2[m]&7分钟 '
@@ -284,7 +242,7 @@ Chat:
   shoutPrefix: '&c[S]&r'
   LocalNoOne: '!actionbar!&c没有人听到你的声音,请在消息前加上!以使用全局聊天'
   shoutDeduction: '!actionbar!&c扣除&e[amount]&c金币作为大喊的代价'
-  # Use \n to add new line
+  # 使用\n添加新行
   publicHover: '&e发送时间: &6%server_time_hh:mm:ss%'
   privateHover: '&e发送时间: &6%server_time_hh:mm:ss%'
   staffHover: '&e发送时间: &6%server_time_hh:mm:ss%'
@@ -384,9 +342,8 @@ command:
       fileExplanation: '&7当前目标文件:&e[file]'
       addTabComplete: ' 添加Tab'
       addTabExplanation: '&6启用后,将添加到现有的Tab中'
-      exact: ' Exact'
-      addExactExplanation: '&6When enabled we will only use this alias when exact
-        command is provided'
+      exact: ' 精确'
+      addExactExplanation: '&6启用后，只有在提供了精确的命令时才使用该别名'
       newAliasInfo: '&e输入新的别名命令名称并按回车键'
       addInfo: '&e输入新的命令.输入&6cancel&e取消'
       addInformationHover: '&e全局变量标记用于发送方类别\n\ &edelay! 5 &6表示在命令中添加延迟\n&e$1 &6将使用新命令给出的变量,并将其放置在此位置\n\
@@ -452,7 +409,7 @@ command:
       name: '&7可见名称'
       nameEdit: '&7Q键点击以编辑名称'
       interactable: '&7可交互'
-      scale: '&7Scale: &f[amount]'
+      scale: '&7比例: &f[amount]'
       explanation: '&8左键或右键调整数值'
       explanation2: '&8按住Shift键使其变快10倍'
       disableGravity: '&e如果要更改此值,请禁用重力'
@@ -484,7 +441,7 @@ command:
         glow: '&7发光'
         invulnerable: '&7无敌'
         interactable: '&7可交互'
-        scale: '&7Scale'
+        scale: '&7比例'
         head: '&7头部'
         torso: '&7躯干'
         leftArm: '&7左臂'
@@ -516,9 +473,9 @@ command:
       info: '&e切换自动飞行充能'
       args: (playerName) [exp/money/off] (-s)
     info:
-      moneyState: '&eMoney recharge: [state]'
-      expState: '&eExp recharge: [state]'
-      updated: '&eState changed to [state]'
+      moneyState: '&e金钱充能: [state]'
+      expState: '&e经验充能: [state]'
+      updated: '&e状态更新为 [state]'
   back:
     help:
       info: '&e返回至上次保存位置'
@@ -542,7 +499,7 @@ command:
       topLineHover: '&6服务器总额: &c[total]'
       list: '&e[place]. &6[playerDisplayName]: &e[balance]'
       ownLine: '&2[place]. &2[playerDisplayName]: &2[balance]'
-      # Set to empty field if you want to not show hover over message
+      # 如果不希望显示悬停信息,请将其设置为空
       hover: '&2[playerName]'
       recalculating: '&2正在重新计算财富榜,请耐心等待几秒钟后重试'
   ban:
@@ -552,7 +509,7 @@ command:
       explanation:
       - cmi.command.ban.bypass 权限可以绕过封禁
     info:
-      # Make sure that OverrideLoginMessage is enabled in config file
+      # 确保在配置文件中启用OverrideLoginMessage
       message: '&c你已被封禁!'
       reason: '&6封禁原因: &e[reason]'
       defaultReason: '&e违反服务器规定'
@@ -625,7 +582,7 @@ command:
       - nameOfBar是可选项,在定义相同的名称时,当前Bar将使用新信息进行更新
       - 颜色可以是:red, green, pink, purple, white, yellow
       - max和current值决定了Bar的填充程度,可以使用PlaceHolderAPI变量进行动态更新
-      - 示例: null
+      - '示例: '
       - /cmi bossbar Zrips BossBarTitle
       - /cmi bossbarmsg all -t:1s -p:%server_max_players%/%server_online% -n:testbar
         -c:red &2Title of bar %server_online%/%server_max_players% &e%cmi_user_name%
@@ -789,8 +746,7 @@ command:
       - '&r&f右键点击以存入'
       holdPaper: '&e手持纸张'
       cantUse: '&e无法使用这张纸张.它已经是一张支票了!'
-      clarification: '&cThis type of cheque is no longer accepted. Please contact
-        with staff member to update it'
+      clarification: '&c不再接受此类支票。请联系管理员更新'
   clear:
     help:
       info: '&e清空玩家背包'
@@ -1269,7 +1225,7 @@ command:
       startScanning: '&e发现 &6[amount] &e个区块需要检查.开始扫描!'
       paused: '&e扫描已暂停,要继续扫描请使用 &6/cmi fixchunk continue &e命令.'
       continuing: '&e扫描继续中'
-      stoped: '&eScanning stopped. You can check the results with /cmi fixchunk info'
+      stoped: '&e扫描已停止.你可以使用 /cmi fixchunk info 命令查看结果'
       speedChange: '&e速度已更改为 [amount]'
       autospeedChange: '&e自动扫描已更改为 [state]'
       messagesChange: '&e消息状态已更改为 [state]'
@@ -1342,7 +1298,7 @@ command:
       info: '&e管理游戏规则'
       args: ''
     info:
-      updated: '&eGame rule (&6[rule]&e) changed for &6[world] &eto &6[value]'
+      updated: '世界 &6[world] &e的游戏规则(&6[rule]&e)&e已设置为 &6[value]'
   generateworth:
     help:
       info: '&e自动生成可能的物品价值数值'
@@ -1357,14 +1313,14 @@ command:
       title: '&7[title]'
   giftpet:
     help:
-      info: '&eGift your tamed pet to another player'
+      info: '&e把你驯服的宠物送给其他玩家'
       args: '[playerName] (-s)'
     info:
-      notTameable: '&eThis entity isin''t tameable'
-      notTamed: '&eThis entity isin''t tamed'
-      notOwner: '&eYou are not owner of this entity'
-      gifted: '&eYou gifted &6[type] &eentity &eto &6[playerDisplayName]'
-      received: '&eYou received &6[type] &eentity &efrom &6[sourceDisplayName]'
+      notTameable: '&e该实体不能被驯服'
+      notTamed: '&e该实体未被驯服'
+      notOwner: '&e你不是该实体的主人'
+      gifted: '&e你将 &6[type] &e送给了 &6[playerDisplayName]'
+      received: '&e你收到了来自 &6[sourceDisplayName] 的&6[type]'
   give:
     help:
       info: '&e给予玩家物品'
@@ -1581,7 +1537,7 @@ command:
         &4将禁用与全息图的交互支持
       alignment: '&7文本对齐方式: &6[type]'
       shadow: '&7文本阴影: &6[state]'
-      fadeIn: '&7Fade in animation: &6[state]'
+      fadeIn: '&7渐入动画: &6[state]'
       textAlpha: '&7文本透明度: &6[alpha]'
       bgAlpha: '&7背景透明度: &6[alpha]'
       bgColor: '&7背景颜色: &6[color]'
@@ -1594,7 +1550,7 @@ command:
       iconScale: '&7图标缩放: &6[scale]'
       iconPitch: '&7图标俯仰: &6[angle]'
       iconYaw: '&7图标偏航: &6[angle]'
-      iconXoff: '&7Icon offset on X: &6[amount]'
+      iconXoff: '&7图标X轴偏移: &6[amount]'
       reset: '&7按下 &6Q &7键重置'
       embeddedAutoButton: '&7启用分页按钮: [state]'
       # Use ctext format to define different behaviors for plain and hover over text
@@ -2853,7 +2809,7 @@ command:
       requiredExp: ' &e经验:[color][current]&e/6[needed]'
       requiredVotes: ' &e投票:[color][current]&e/6[needed]'
       requiredPerm: ' &e权限:'
-      requiredPlaceholder: ' &eCustom: '
+      requiredPlaceholder: ' &e自定义: '
       requiredPlaceholderList: '[color][message]'
       requiredPlaceholderHover: '&e[color][current]&e/&6[needed]'
       requiredMcmmo: ' &eMcmmo:'
@@ -2928,7 +2884,7 @@ command:
       types:
         Shaped: 有图案合成
         Shapeless: 无图案合成
-        Transmute: Transmute
+        Transmute: 转化合成
         Furnace: 熔炉合成
         Blasting: 高炉合成
         Campfire: 营火合成
@@ -3719,8 +3675,8 @@ command:
       DiskUsage: ' &e磁盘使用率: &6[percent]% &e(&6[current]&e/&6[max] GB&e)'
       Worlds: '&e[number]. &6[world] &e区块数: &6[chunks] 区块 &6[entities] 实体 &e图块数: &6[tiles]
         图块 &6[players] 玩家'
-      MostTiles: '&7Most tiles (&f[tiles]&7) in &f[coord] &7chunk'
-      MostEntities: '&7Most entities (&f[entities]&7) in &f[coord] &7chunk'
+      MostTiles: '&7多数图块 (&f[tiles]&7) 在 &f[coord] &7区块'
+      MostEntities: '&7多数实体 (&f[entities]&7) 在 &f[coord] &7区块'
   stonecutter:
     help:
       info: '&e打开切石机'
@@ -3768,7 +3724,7 @@ command:
       - 封禁的最大范围取决于cmi.command.tempban.max.[amount]
       - cmi.command.tempban.max.unlimited - 允许无限期封禁
       - 如果玩家没有任何封禁,最大值将为60秒
-      - 示例: null
+      - '示例: '
       - /cmi tempban zrips 5m 因为说脏话
     info:
       message: '&c临时封禁!'
@@ -3890,9 +3846,9 @@ command:
       bad:
         msg: '&c传送位置不安全.[reason]'
         extraMsg: '&e使用 &6/tpbypass &e来绕过此问题.你还有 [time]'
-        badfloor: '&cBad floor ([material])'
+        badfloor: '&c破坏性地面 ([material])'
         void: '&c虚空'
-        fall: '&cFall ([distance])'
+        fall: '&c坠落 ([distance])'
         suffocation: '&c窒息'
         unknown: '&c未知'
         plugin: '&c第三方插件'
@@ -4130,7 +4086,7 @@ command:
       sleepIgnore: '&e忽略睡眠计数'
       joinVanished: '&e始终以隐身模式加入游戏'
       deathMessages: '&e显示死亡信息'
-      hookPlayers: '&eHooking entities'
+      hookPlayers: '&e连接实体'
       bossbarTitle: '&f隐身'
   version:
     help:

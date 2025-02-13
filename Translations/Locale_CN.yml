@@ -1603,7 +1603,7 @@ command:
       bedButton: '&7床的位置'
       homeButton: '&7家的位置'
       deathButton: '&7死亡位置'
-      backButton: '&7Back location'
+      backButton: '&7返回位置'
       slot: '&7槽位: &e[slot]'
       private: '&7私密: &e[state]'
       favorite: '&7收藏: &e[state]'
@@ -3164,7 +3164,7 @@ command:
       moreLore:
       - '&b你需要更多这种物品.'
       - '&b至少需要 &e[amount]'
-      title: '&2回收者'
+      title: '&2物品回收'
   schedule:
     help:
       info: '&e触发计划任务'
@@ -3527,7 +3527,7 @@ command:
       Pig: '&e猪行驶距离: &6[value]'
       Horse: '&e马行驶距离: &6[value]'
       Elytra: '&e鞘翅行驶距离: &6[value]'
-      Damage: '&e伤害 &6[造成] [承受]'
+      Damage: '&e伤害 &6[dealt] [taken]'
       DamageDealt: '&e造成伤害: &6[value]'
       DamageTaken: '&e承受伤害: &6[value]'
       JUMP: '&e跳跃次数: &6[value]'

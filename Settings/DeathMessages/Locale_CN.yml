@@ -12,8 +12,8 @@ Escaping:
 - ' &7在逃离&2[sourceDisplayName]&7时'
 - ' &7在与&2[sourceDisplayName]&7战斗时'
 RunningAway:
-- ' &7在逃离 &2[prevMobName] &7时'
-- ' &7在与 &2[prevMobName] &7战斗时'
+- ' &7在逃离&2[prevMobName]&7时'
+- ' &7在与&2[prevMobName]&7战斗时'
 Player:
   General:
   - '&2[playerDisplayName]&7被&2[sourceDisplayName]&7杀死'

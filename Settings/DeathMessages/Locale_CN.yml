@@ -1,518 +1,554 @@
-# Defines hover over infomation about player who died. Use basic placeholders like %cmi_user_name% to include any information you would want
-# Set this like to '' if you want to avoid including hover over message
+# 定义所有死亡消息的前缀
+Prefix: 💀
+# 定义鼠标悬停时显示的死亡玩家信息。可以使用 %cmi_user_name% 等基础占位符来包含所需的信息
+# 如果不想包含鼠标悬停信息，将此项设置为 ''
 PlayerHover:
 - ''
-# Defines hover over infomation about player who killed. Use basic placeholders like %cmi_user_name% to include any information you would want
-# Set this like to '' if you want to avoid including hover over message
+# 定义鼠标悬停时显示的击杀者信息。可以使用 %cmi_user_name% 等基础占位符来包含所需的信息
+# 如果不想包含鼠标悬停信息，将此项设置为 ''
 KillerHover:
 - ''
 Escaping:
-- ' &7试图逃离 &2[sourceDisplayName]&7 时'
-- ' &7与 &2[sourceDisplayName]&7 战斗时'
+- ' &7在逃离 &2[sourceDisplayName] &7时'
+- ' &7在与 &2[sourceDisplayName] &7战斗时'
 RunningAway:
-- ' &7试图逃离 &2[prevMobName]&7 时'
-- ' &7与 &2[prevMobName]&7 战斗时'
+- ' &7在逃离 &2[prevMobName] &7时'
+- ' &7在与 &2[prevMobName] &7战斗时'
 Player:
   General:
-  - '&2[playerDisplayName] &7死于 &2[sourceDisplayName]'
-  - '&2[playerDisplayName] &7死于 &2[sourceDisplayName] &7强大的手下'
-  - '&2[playerDisplayName] &7被 &2[sourceDisplayName] &7一拳打死'
+  - '&2[playerDisplayName]&7被 &2[sourceDisplayName] &7杀死'
+  - '&2[playerDisplayName]&7被 &2[sourceDisplayName] &7的强力一击终结'
+  - '&2[playerDisplayName]&7被 &2[sourceDisplayName] &7活活打死'
   Item:
-  - '&2[playerDisplayName] &7被 &2[sourceDisplayName] &7用 &2[item] &7杀死了'
+  - '&2[playerDisplayName]&7被 &2[sourceDisplayName] &7使用&2[item]&7杀死'
   Projectile:
-  - '&2[playerDisplayName] &7被 &2[sourceDisplayName] &7用 &2[type] &7射杀'
+  - '&2[playerDisplayName]&7被 &2[sourceDisplayName] &7用 &2[type] &7射杀'
   Fireball:
-  - '&2[playerDisplayName] &7被 &2[sourceDisplayName] &7用火球烧死了'
+  - '&2[playerDisplayName]&7被 &2[sourceDisplayName] &7的火球击中'
   Firework:
-  - '&2[playerDisplayName] &7在与 &2[sourceDisplayName] &7战斗时随着一声巨响消失了'
+  - '&2[playerDisplayName]&7在 &2[sourceDisplayName] &7的烟花爆炸中陨落'
+  Tnt:
+  - '&2[playerDisplayName]&7被 &2[sourceDisplayName] &7炸成了碎片'
 FallingBlocks:
   Anvil:
     General:
-    - '&2[playerDisplayName] &7被坠落的铁砧压扁了'
-    - '&2[playerDisplayName] &7被铁砧碾碎'
-    - '&2[playerDisplayName] &7用头撞击铁砧'
+    - '&2[playerDisplayName]&7被掉落的铁砧砸扁了'
+    - '&2[playerDisplayName]&7被铁砧压成了肉饼'
+    - '&2[playerDisplayName]&7的头正好撞上了掉落的铁砧'
+  Pointed_dripstone:
+    General:
+    - '&2[playerDisplayName]&7被掉落的钟乳石刺穿'
 Block:
   Cactus:
     General:
-    - '&2[playerDisplayName] &7被戳死了'
-    - '&2[playerDisplayName] &7试图拥抱仙人掌'
+    - '&2[playerDisplayName]&7被仙人掌扎死了'
+    - '&2[playerDisplayName]&7试图拥抱仙人掌，结果……'
   Dispenser:
     Arrow:
-    - '&2[playerDisplayName] &7被发射器用箭射杀...'
+    - '&2[playerDisplayName]&7被发射器射出的箭矢击杀'
     Splash_potion:
-    - '&2[playerDisplayName] &7被发射器溅得满身都是...'
+    - '&2[playerDisplayName]&7被发射器喷洒的药水淹没'
   Magma_block:
     General:
-    - '&2[playerDisplayName] &7发现了地板是熔岩做的'
+    - '&2[playerDisplayName]&7发现地板竟然是岩浆块'
   Sweet_berry_bush:
     General:
-    - '&2[playerDisplayName] &7被甜浆果丛刺死了'
+    - '&2[playerDisplayName]&7被甜浆果丛扎死了'
+  Campfire:
+    General:
+    - '&2[playerDisplayName]&7在营火上被烤熟了'
+  Soul_campfire:
+    General:
+    - '&2[playerDisplayName]&7的灵魂被夺走了'
   Lava:
     General:
-    - '&2[playerDisplayName] &7试图在熔岩里游泳'
+    - '&2[playerDisplayName]&7尝试在岩浆中游泳'
   Pointed_dripstone:
     General:
-    - '&2[playerDisplayName] &7被石笋刺穿了'
+    - '&2[playerDisplayName]&7被钟乳石刺穿'
 Custom:
   Block_explosion:
     General:
-    - '&2[playerDisplayName] &7被[刻意的游戏设计]杀死了'
+    - '&2[playerDisplayName]&7被 [有意的游戏设计] 杀死'
+  World_border:
+    General:
+    - '&2[playerDisplayName]&7离开了这个世界的边界'
+  Starvation:
+    General:
+    - '&2[playerDisplayName]&7活活饿死了'
   Fall:
     Low:
       General:
-      - '&2[playerDisplayName] &7落地过猛'
+      - '&2[playerDisplayName]&7摔得太重了'
     High:
       General:
-      - '&2[playerDisplayName] &7从高处摔了下来'
+      - '&2[playerDisplayName]&7从高空坠落'
   Fire:
     General:
-    - '&2[playerDisplayName] &7浴火焚身'
+    - '&2[playerDisplayName]&7被熊熊烈火吞噬'
   Fire_tick:
     General:
-    - '&2[playerDisplayName] &7被烧死了'
+    - '&2[playerDisplayName]&7被烧成了灰烬'
   Lightning:
     General:
-    - '&2[playerDisplayName] &7被闪电击中'
+    - '&2[playerDisplayName]&7被闪电劈中'
   Suffocation:
     General:
-    - '&2[playerDisplayName] &7在墙里窒息而亡'
+    - '&2[playerDisplayName]&7被活埋了'
   Custom:
     General:
-    - '&2[playerDisplayName] &7死了'
+    - '&2[playerDisplayName]&7死亡'
   Drowning:
     General:
-    - '&2[playerDisplayName] &7淹死了'
+    - '&2[playerDisplayName]&7淹死了'
   Freeze:
     General:
-    - '&2[playerDisplayName] &7被冻死了'
+    - '&2[playerDisplayName]&7被冻成了冰雕'
   Suicide:
     General:
-    - '&2[playerDisplayName] &7结束了自己的生命'
+    - '&2[playerDisplayName]&7选择了结束自己的生命'
   Void:
     General:
-    - '&2[playerDisplayName] &7掉出了这个世界'
+    - '&2[playerDisplayName]&7掉出了这个世界'
   EndCrystal:
     General:
-    - '&2[playerDisplayName] &7被末地水晶炸死了'
+    - '&2[playerDisplayName]&7像水晶一样粉碎了'
   Wither:
     General:
-    - '&2[playerDisplayName] &7凋零了'
+    - '&2[playerDisplayName]&7被凋零侵蚀'
   Fly_into_wall:
     General:
-    - '&2[playerDisplayName] &7感受到了动能'
-    - '&2[playerDisplayName] &7学会了什么是动量守恒'
+    - '&2[playerDisplayName]&7体验到了动能的威力'
+    - '&2[playerDisplayName]&7终于理解了动量守恒'
 Projectile:
   Arrow:
-  - '&2[playerDisplayName] &7被击杀者用箭射杀'
+  - '&2[playerDisplayName]&7被箭矢射杀'
   Spectral_arrow:
-  - '&2[playerDisplayName] &7被击杀者用光灵箭射杀'
+  - '&2[playerDisplayName]&7被光灵箭射中'
   Tipped_arrow:
-  - '&2[playerDisplayName] &7被击杀者用药箭射杀'
+  - '&2[playerDisplayName]&7被药水箭射杀'
   Fireball:
-  - '&2[playerDisplayName] &7被击杀者用火球烧死了'
+  - '&2[playerDisplayName]&7被火球轰炸'
   Firework:
-  - '&2[playerDisplayName] &7随着一声巨响消失了'
+  - '&2[playerDisplayName]&7在烟花爆炸中消失'
 Mob:
   Primed_tnt:
     General:
-    - '&2[playerDisplayName] &7爆炸了'
+    - '&2[playerDisplayName]&7被炸药炸成了碎片'
+  Tnt_minecart:
+    General:
+    - '&2[playerDisplayName]&7被炸药矿车炸飞'
   Elder_guardian:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被远古守卫者的强大力量击败'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7使用&2[item]&7杀死'
   Wither_skeleton:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被凋灵骷髅的利刃终结'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7手持&2[item]&7杀死'
   Stray:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被流浪者的寒冰箭射穿'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7的冰冷&2[item]&7终结'
   Husk:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被尸壳的诅咒所侵蚀'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7手持&2[item]&7杀死'
   Zombie_villager:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被僵尸村民诅咒'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7手持&2[item]&7感染成僵尸'
   Skeleton_horse:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被幽灵战马的幽冥蹄子践踏，死于 &2[mobName]'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7骑着幽灵战马，用&2[item]&7击败'
   Zombie_horse:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被不死战马践踏，死于 &2[mobName]'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7骑着不死战马，用&2[item]&7终结'  
   Armor_stand:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被一个拥有自我意识的&2[mobName]&7意外击败'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7操控着&2[item]&7杀死'
   Donkey:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7的顽强意志击败'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7骑着倔强的驴子，用&2[item]&7打倒'
   Mule:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7的强大力量压倒'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7骑着强壮的骡子，用&2[item]&7终结'
   Evoker:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7的黑暗魔法吞噬'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7施展黑暗魔法，用&2[item]&7消灭'
   Vex:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被一只&2[mobName]&7的骚扰折磨至死'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7和它手持&2[item]&7的恼鬼击败'
   Vindicator:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7在与&2[mobName]&7的激战中败北'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7用&2[item]&7压倒'
   Illusioner:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7的幻术欺骗并击败'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7施展幻术，用&2[item]&7消灭'
   Creeper:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被一只&2[mobName]&7炸得粉碎'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7用&2[item]&7炸飞'
   Skeleton:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7的精准箭术射杀'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7用&2[item]&7的箭射倒'
+  
   Spider:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被一只&2[mobName]&7网住并吞噬'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7用&2[item]&7的毒牙咬死'
+  
   Giant:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7巨大的脚掌踩扁'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7的巨大力量，用&2[item]&7打倒'
+  
   Zombie:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7无情的攻击吞噬'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7和它的僵尸大军，用&2[item]&7击败'
+  
   Slime:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7的黏液吞噬'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7用&2[item]&7和它的黏液窒息'
   Ghast:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7的烈焰火球轰成灰烬'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7用&2[item]&7射出的爆炸火球消灭'
   Zombified_piglin:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7的亡灵怒火吞噬'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7和它的亡灵大军，用&2[item]&7击败'
   Enderman:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7在与&2[mobName]&7的瞬移战斗中败北'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7用&2[item]&7瞬移击杀'
   Cave_spider:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7的毒液麻痹并吞噬'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
-  Silverfish:
-    General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
-    Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7用&2[item]&7施加毒液杀死'
   Blaze:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被一只&2[mobName]&7的烈焰吞没'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
-  Magma_cube:
-    General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
-    Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7用&2[item]&7的烈焰吞噬'
   Ender_dragon:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7在与传说中的&2[mobName]&7战斗中败北'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7的爪牙和&2[item]&7终结'
   Wither:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被恐怖的&2[mobName]&7的混沌力量撕裂'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
-  Bat:
-    General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
-    Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
-  Witch:
-    General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
-    Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
-  Endermite:
-    General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
-    Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
-  Guardian:
-    General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
-    Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7的混沌之力，用&2[item]&7粉碎'
   Shulker:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7的浮空魔法击败'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7用&2[item]&7的浮空魔法消灭'
+  Witch:
+    General:
+    - '&2[playerDisplayName]&7被邪恶的&2[mobName]&7施咒击败'
+    Item:
+    - '&2[playerDisplayName]&7被&2[mobName]&7用&2[item]&7的邪恶魔法杀死'
+  Endermite:
+    General:
+    - '&2[playerDisplayName]&7被&2[mobName]的异界气息压倒'
+    Item:
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的异界气息下败北'
+  Guardian:
+    General:
+    - '&2[playerDisplayName]&7被&2[mobName]的电能击败'
+    Item:
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的电能下倒下'
+  Shulker:
+    General:
+    - '&2[playerDisplayName]&7被&2[mobName]的漂浮能力击败'
+    Item:
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的漂浮作用下失败'
   Pig:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7与调皮的&2[mobName]相遇后变成了培根'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的恶作剧下败北'
   Sheep:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]的羊毛威胁所剥夺'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7被装备&2[item]&7的&2[mobName]的羊毛威胁击败'
   Cow:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]的无情挤奶压垮'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的无情挤奶下倒下'
   Chicken:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]的啄击击败'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的啄击恐惧下倒下'
   Squid:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]的水下力量压倒'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的水下力量面前倒下'
   Wolf:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]的咆哮压倒'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
-  Mushroom_cow:
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的咆哮下败北'
+  Mooshroom:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]杀死'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
-  Snowman:
+    - '&2[playerDisplayName]&7被&2[mobName]用&2[item]杀死'
+  Snow_golem:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]杀死'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]用&2[item]杀死'
   Ocelot:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7无法驯服&2[mobName]的野性'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的野性面前倒下'
   Iron_golem:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]的强大力量压垮'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的强大力量下失败'
   Horse:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7在战斗中失利，从忠诚的伴侣&2[mobName]身上摔下'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的战斗中败北'
   Rabbit:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被敏捷的&2[mobName]送上了来世'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的迅捷攻击下倒下'
   Polar_bear:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7成为了&2[mobName]无情攻击的冰冻牺牲品'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7被装备&2[item]&7的&2[mobName]的冰冻力量压倒'
   Llama:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]的强大吐痰攻击'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7被装备&2[item]&7的&2[mobName]的强大吐痰击败'
   Parrot:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7在遇到&2[mobName]的五彩斑斓的威胁后沉默了'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的五彩威胁下倒下'
   Villager:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7成为了与&2[mobName]生死斗争的牺牲品'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]无情追击下倒下'
   Turtle:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7无法逃脱&2[mobName]缓慢却稳健的愤怒'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]缓慢而稳健的攻击下倒下'
   Phantom:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]的幽灵气息追逐到死亡'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的幽灵气息面前败北'
   Cod:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7成为了&2[mobName]的鱼食'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的饥饿之下倒下'
   Salmon:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7游进了&2[mobName]的张开的大嘴'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的等待中倒下'
   Pufferfish:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]的有毒刺扎死'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的有毒刺面前倒下'
   Tropical_fish:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]的色彩斑斓的美丽迷倒'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的色彩美丽面前倒下'
   Drowned:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7在&2[mobName]的注视下沉没'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的水下拥抱中倒下'
   Dolphin:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7无法跟上&2[mobName]的敏捷'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的敏捷下失败'
   Cat:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]的咕噜声压倒'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的咕噜声下倒下'
   Panda:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7在&2[mobName]的竹子正义下倒下'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的竹子正义下败北'
   Pillager:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7成为了&2[mobName]&7无情攻击的目标'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们的无情攻击下倒下'
   Ravager:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被恐怖的&2[mobName]&7强大蹄子践踏'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们强大的蹄子下倒下'
   Trader_llama:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7与&2[mobName]&7交换了最后一刻'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们的交易伙伴下倒下'
   Wandering_trader:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7无法与&2[mobName]&7谈判脱离困境'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们的谈判困境下倒下'
   Fox:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被狡猾的&2[mobName]&7智计所骗'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们的狡猾战术下倒下'
   Bee:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7的嗡嗡声蜇伤'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们嗡嗡的蜇刺下倒下'
   Hoglin:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7在与&2[mobName]&7的战斗中被拖入困境'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们的拖拽下倒下'
   Piglin:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7未能与&2[mobName]&7达成协议，沦为他们愤怒的目标'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们的愤怒攻击下倒下'
   Strider:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7在与&2[mobName]&7的交错中被烧伤'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们燃烧的路径下倒下'
   Zoglin:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7成为愤怒的&2[mobName]&7的目标'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们的愤怒追击下倒下'
   Piglin_brute:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7无法抵挡&2[mobName]&7的残暴力量'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们的残暴力量下倒下'
   Axolotl:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7未能逃脱贪婪的&2[mobName]&7'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们贪婪追击下倒下'
   Glow_squid:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7在&2[mobName]&7的发光拥抱中迷失'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们发光的拥抱下倒下'
   Goat:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7无法从&2[mobName]&7无情的追击中逃脱'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们的无情追击下倒下'
   Allay:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7被&2[mobName]&7迷人的召唤诱入了深渊'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们迷人的召唤下倒下'
   Frog:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7在&2[mobName]&7安排的死亡跳跃中结束了他们的最后一刻'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们的死亡跳跃下倒下'
   Tadpole:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7在&2[mobName]&7主导的蝌蚪狂潮中迎来水中的终结'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们的蝌蚪狂潮下倒下'
   Warden:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7在恐怖的&2[mobName]&7沉重脚步下倒下'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7装备&2[item]&7的&2[mobName]&7和他们的沉重脚步下倒下'
   Camel:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7在与&2[mobName]&7的遭遇后被困在沙漠'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7装备&2[item]&7的&2[mobName]&7和他们的沙漠遭遇下倒下'
   Sniffer:
     General:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 杀死了'
+    - '&2[playerDisplayName]&7闻到了危险，却未能逃脱&2[mobName]&7的抓捕'
     Item:
-    - '&2[playerDisplayName] &7被 &2[mobName]&7 用 &2[item]&7 杀死了'
+    - '&2[playerDisplayName]&7装备&2[item]&7的&2[mobName]&7和他们的危险嗅觉下倒下'
+  Breeze:
+    General:
+    - '&2[playerDisplayName]&7被&2[mobName]&7杀害'
+    Item:
+    - '&2[playerDisplayName]&7被&2[mobName]&7用&2[item]&7杀害'
+  Armadillo:
+    General:
+    - '&2[playerDisplayName]&7被&2[mobName]&7杀害'
+    Item:
+    - '&2[playerDisplayName]&7被&2[mobName]&7用&2[item]&7杀害'
+  Bogged:
+    General:
+    - '&2[playerDisplayName]&7被&2[mobName]&7杀害'
+    Item:
+    - '&2[playerDisplayName]&7被&2[mobName]&7用&2[item]&7杀害'
+  Creaking:
+    General:
+    - '&2[playerDisplayName]&7被&2[mobName]&7杀害'
+    Item:
+    - '&2[playerDisplayName]&7被&2[mobName]&7用&2[item]&7杀害'

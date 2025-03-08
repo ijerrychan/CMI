@@ -9,26 +9,26 @@ PlayerHover:
 KillerHover:
 - ''
 Escaping:
-- ' &7在逃离 &2[sourceDisplayName] &7时'
-- ' &7在与 &2[sourceDisplayName] &7战斗时'
+- ' &7在逃离&2[sourceDisplayName]&7时'
+- ' &7在与&2[sourceDisplayName]&7战斗时'
 RunningAway:
 - ' &7在逃离 &2[prevMobName] &7时'
 - ' &7在与 &2[prevMobName] &7战斗时'
 Player:
   General:
-  - '&2[playerDisplayName]&7被 &2[sourceDisplayName] &7杀死'
-  - '&2[playerDisplayName]&7被 &2[sourceDisplayName] &7的强力一击终结'
-  - '&2[playerDisplayName]&7被 &2[sourceDisplayName] &7活活打死'
+  - '&2[playerDisplayName]&7被&2[sourceDisplayName]&7杀死'
+  - '&2[playerDisplayName]&7被&2[sourceDisplayName]&7的强力一击终结'
+  - '&2[playerDisplayName]&7被&2[sourceDisplayName]&7活活打死'
   Item:
-  - '&2[playerDisplayName]&7被 &2[sourceDisplayName] &7使用&2[item]&7杀死'
+  - '&2[playerDisplayName]&7被&2[sourceDisplayName]&7使用&2[item]&7杀死'
   Projectile:
-  - '&2[playerDisplayName]&7被 &2[sourceDisplayName] &7用 &2[type] &7射杀'
+  - '&2[playerDisplayName]&7被&2[sourceDisplayName]&7用 &2[type] &7射杀'
   Fireball:
-  - '&2[playerDisplayName]&7被 &2[sourceDisplayName] &7的火球击中'
+  - '&2[playerDisplayName]&7被&2[sourceDisplayName]&7的火球击中'
   Firework:
-  - '&2[playerDisplayName]&7在 &2[sourceDisplayName] &7的烟花爆炸中陨落'
+  - '&2[playerDisplayName]&7在&2[sourceDisplayName]&7的烟花爆炸中陨落'
   Tnt:
-  - '&2[playerDisplayName]&7被 &2[sourceDisplayName] &7炸成了碎片'
+  - '&2[playerDisplayName]&7被&2[sourceDisplayName]&7炸成了碎片'
 FallingBlocks:
   Anvil:
     General:

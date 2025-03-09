@@ -316,12 +316,12 @@ Mob:
     General:
     - '&2[playerDisplayName]&7被&2[mobName]的无情挤奶压垮'
     Item:
-    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的无情挤奶下倒下'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的无情挤奶中倒下'
   Chicken:
     General:
     - '&2[playerDisplayName]&7被&2[mobName]的啄击击败'
     Item:
-    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的啄击恐惧下倒下'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的啄击恐惧中倒下'
   Squid:
     General:
     - '&2[playerDisplayName]&7被&2[mobName]的水下力量压倒'
@@ -349,9 +349,9 @@ Mob:
     - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的野性面前倒下'
   Iron_golem:
     General:
-    - '&2[playerDisplayName]&7被&2[mobName]的强大力量压垮'
+    - '&2[playerDisplayName]&7被&2[mobName]的无穷力量碾碎'
     Item:
-    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的强大力量下失败'
+    - '&2[playerDisplayName]&7被装备&2[item]&7的&2[mobName]的无穷力量碾碎'
   Horse:
     General:
     - '&2[playerDisplayName]&7在战斗中失利，从忠诚的伴侣&2[mobName]身上摔下'
@@ -361,7 +361,7 @@ Mob:
     General:
     - '&2[playerDisplayName]&7被敏捷的&2[mobName]送上了来世'
     Item:
-    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的迅捷攻击下倒下'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的迅捷攻击下死亡'
   Polar_bear:
     General:
     - '&2[playerDisplayName]&7成为了&2[mobName]无情攻击的冰冻牺牲品'
@@ -374,29 +374,29 @@ Mob:
     - '&2[playerDisplayName]&7被装备&2[item]&7的&2[mobName]的强大吐痰击败'
   Parrot:
     General:
-    - '&2[playerDisplayName]&7在遇到&2[mobName]的五彩斑斓的威胁后沉默了'
+    - '&2[playerDisplayName]&7在遇到&2[mobName]的五彩威胁后沉默了'
     Item:
-    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的五彩威胁下倒下'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的五彩威胁下沉默'
   Villager:
     General:
     - '&2[playerDisplayName]&7成为了与&2[mobName]生死斗争的牺牲品'
     Item:
-    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]无情追击下倒下'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]无情追击下死亡'
   Turtle:
     General:
     - '&2[playerDisplayName]&7无法逃脱&2[mobName]缓慢却稳健的愤怒'
     Item:
-    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]缓慢而稳健的攻击下倒下'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]缓慢而稳健的攻击下死亡'
   Phantom:
     General:
     - '&2[playerDisplayName]&7被&2[mobName]的幽灵气息追逐到死亡'
     Item:
-    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的幽灵气息面前败北'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的幽灵气息前败北'
   Cod:
     General:
     - '&2[playerDisplayName]&7成为了&2[mobName]的鱼食'
     Item:
-    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的饥饿之下倒下'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的饥饿中被吞食'
   Salmon:
     General:
     - '&2[playerDisplayName]&7游进了&2[mobName]的张开的大嘴'
@@ -406,17 +406,17 @@ Mob:
     General:
     - '&2[playerDisplayName]&7被&2[mobName]的有毒刺扎死'
     Item:
-    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的有毒刺面前倒下'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的有毒刺前倒下'
   Tropical_fish:
     General:
     - '&2[playerDisplayName]&7被&2[mobName]的色彩斑斓的美丽迷倒'
     Item:
-    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的色彩美丽面前倒下'
+    - '&2[playerDisplayName]&7被装备&2[item]&7的&2[mobName]的色彩斑斓迷倒'
   Drowned:
     General:
     - '&2[playerDisplayName]&7在&2[mobName]的注视下沉没'
     Item:
-    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的水下拥抱中倒下'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的水下拥抱中溺亡'
   Dolphin:
     General:
     - '&2[playerDisplayName]&7无法跟上&2[mobName]的敏捷'
@@ -426,112 +426,112 @@ Mob:
     General:
     - '&2[playerDisplayName]&7被&2[mobName]的咕噜声压倒'
     Item:
-    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的咕噜声下倒下'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的咕噜声中倒下'
   Panda:
     General:
-    - '&2[playerDisplayName]&7在&2[mobName]的竹子正义下倒下'
+    - '&2[playerDisplayName]&7在&2[mobName]的正义之掌下领悟真谛'
     Item:
-    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的竹子正义下败北'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]的正义攻击中倒下'
   Pillager:
     General:
     - '&2[playerDisplayName]&7成为了&2[mobName]&7无情攻击的目标'
     Item:
-    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们的无情攻击下倒下'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7的无情攻击中倒下'
   Ravager:
     General:
-    - '&2[playerDisplayName]&7被恐怖的&2[mobName]&7强大蹄子践踏'
+    - '&2[playerDisplayName]&7被恐怖的&2[mobName]&7强大蹄足践踏'
     Item:
-    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们强大的蹄子下倒下'
+    - '&2[playerDisplayName]&7被装备&2[item]&7的&2[mobName]&7的强大蹄足践踏'
   Trader_llama:
     General:
     - '&2[playerDisplayName]&7与&2[mobName]&7交换了最后一刻'
     Item:
-    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们的交易伙伴下倒下'
+    - '&2[playerDisplayName]&7被装备&2[item]&7的&2[mobName]&7和它的交易伙伴击败'
   Wandering_trader:
     General:
     - '&2[playerDisplayName]&7无法与&2[mobName]&7谈判脱离困境'
     Item:
-    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们的谈判困境下倒下'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7的谈判困境中倒下'
   Fox:
     General:
     - '&2[playerDisplayName]&7被狡猾的&2[mobName]&7智计所骗'
     Item:
-    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们的狡猾战术下倒下'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7的狡猾战术下倒下'
   Bee:
     General:
     - '&2[playerDisplayName]&7被&2[mobName]&7的嗡嗡声蜇伤'
     Item:
-    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们嗡嗡的蜇刺下倒下'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7嗡嗡的蜇刺中倒下'
   Hoglin:
     General:
     - '&2[playerDisplayName]&7在与&2[mobName]&7的战斗中被拖入困境'
     Item:
-    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们的拖拽下倒下'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7的拖拽下死亡'
   Piglin:
     General:
-    - '&2[playerDisplayName]&7未能与&2[mobName]&7达成协议，沦为他们愤怒的目标'
+    - '&2[playerDisplayName]&7未能与&2[mobName]&7达成协议，沦为他们怒攻的目标'
     Item:
-    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们的愤怒攻击下倒下'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7的愤怒攻击中倒下'
   Strider:
     General:
-    - '&2[playerDisplayName]&7在与&2[mobName]&7的交错中被烧伤'
+    - '&2[playerDisplayName]&7在与&2[mobName]&7的交战中被烧伤'
     Item:
-    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们燃烧的路径下倒下'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7燃烧路径上倒下'
   Zoglin:
     General:
     - '&2[playerDisplayName]&7成为愤怒的&2[mobName]&7的目标'
     Item:
-    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们的愤怒追击下倒下'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7的愤怒追击中倒下'
   Piglin_brute:
     General:
     - '&2[playerDisplayName]&7无法抵挡&2[mobName]&7的残暴力量'
     Item:
-    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们的残暴力量下倒下'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7的残暴力量中倒下'
   Axolotl:
     General:
     - '&2[playerDisplayName]&7未能逃脱贪婪的&2[mobName]&7'
     Item:
-    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们贪婪追击下倒下'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7的贪婪追击中倒下'
   Glow_squid:
     General:
     - '&2[playerDisplayName]&7在&2[mobName]&7的发光拥抱中迷失'
     Item:
-    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们发光的拥抱下倒下'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7发光的拥抱中倒下'
   Goat:
     General:
     - '&2[playerDisplayName]&7无法从&2[mobName]&7无情的追击中逃脱'
     Item:
-    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们的无情追击下倒下'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7的无情追击中倒下'
   Allay:
     General:
     - '&2[playerDisplayName]&7被&2[mobName]&7迷人的召唤诱入了深渊'
     Item:
-    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们迷人的召唤下倒下'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们迷人的召唤中倒下'
   Frog:
     General:
     - '&2[playerDisplayName]&7在&2[mobName]&7安排的死亡跳跃中结束了他们的最后一刻'
     Item:
-    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们的死亡跳跃下倒下'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7的死亡跳跃中倒下'
   Tadpole:
     General:
     - '&2[playerDisplayName]&7在&2[mobName]&7主导的蝌蚪狂潮中迎来水中的终结'
     Item:
-    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7和他们的蝌蚪狂潮下倒下'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7的蝌蚪狂潮中倒下'
   Warden:
     General:
-    - '&2[playerDisplayName]&7在恐怖的&2[mobName]&7沉重脚步下倒下'
+    - '&2[playerDisplayName]&7在恐怖的&2[mobName]&7沉重脚步中倒下'
     Item:
-    - '&2[playerDisplayName]&7装备&2[item]&7的&2[mobName]&7和他们的沉重脚步下倒下'
+    - '&2[playerDisplayName]&7在装备&2[item]&7的&2[mobName]&7的沉重脚步中倒下'
   Camel:
     General:
     - '&2[playerDisplayName]&7在与&2[mobName]&7的遭遇后被困在沙漠'
     Item:
-    - '&2[playerDisplayName]&7装备&2[item]&7的&2[mobName]&7和他们的沙漠遭遇下倒下'
+    - '&2[playerDisplayName]&7死在与装备&2[item]&7的&2[mobName]&7的沙漠遭遇中'
   Sniffer:
     General:
     - '&2[playerDisplayName]&7闻到了危险，却未能逃脱&2[mobName]&7的抓捕'
     Item:
-    - '&2[playerDisplayName]&7装备&2[item]&7的&2[mobName]&7和他们的危险嗅觉下倒下'
+    - '&2[playerDisplayName]&7被装备&2[item]&7的&2[mobName]&7的灵敏嗅觉捕捉到'
   Breeze:
     General:
     - '&2[playerDisplayName]&7被&2[mobName]&7杀害'

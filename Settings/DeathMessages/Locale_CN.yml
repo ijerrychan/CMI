@@ -491,7 +491,7 @@ Mob:
     General:
     - '&2[playerDisplayName]&7惹怒了&2[mobName]'
     Item:
-    - '&2[playerDisplayName]&7被愤怒的&2[mobName]&7用&2[item]&杀死了'
+    - '&2[playerDisplayName]&7被愤怒的&2[mobName]&7用&2[item]&7杀死了'
   Piglin_brute:
     General:
     - '&2[playerDisplayName]&7无法抵挡&2[mobName]&7的残暴攻击'

@@ -4087,6 +4087,7 @@ command:
       joinVanished: '&e始终以隐身模式加入游戏'
       deathMessages: '&e显示死亡信息'
       hookPlayers: '&e连接实体'
+      level: '&e隐身等级'
       bossbarTitle: '&f隐身'
   version:
     help:

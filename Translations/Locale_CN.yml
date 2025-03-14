@@ -97,7 +97,7 @@ info:
   flyingToHigh: '&c您不能飞得太高,最大高度为 &6[max]&c!'
   specializedItemFail: '&c无法确定特定物品的需求值:&7[value]'
   sunSpeeding: 睡眠 [count] 的 [total] [hour] 小时 [speed]X 速度
-  sleepersRequired: '!actionbar!&f[sleeping] &7中的 &f[required] &7睡眠,用于夜间加速'
+  sleepersRequired: '!actionbar!&f[sleeping]&7 人正在睡觉，&7加速夜晚共需 &f[required] &7人'
   sunSpeedingTitle: '&7[hour]'
   skippingNight: '!title!&7跳过整个夜晚'
   sunSpeedingSubTitle: '&f[count]&7/&f[total] &7(&f[speed]X&7)'
@@ -1938,7 +1938,7 @@ command:
       info: '&e更改物品描述'
       args: (-p:[playerName]) [linenumber/*] [remove/insert/new lore line]
     info:
-      feedback: '&e你已将物品描述更改为''&r&5[loreLine]&e'',对于玩家&3[playerDisplayName]&e (&3[offon]&e).'
+      feedback: '&e你已将物品描述 (&6[line]&e) 更改为''&r&5[loreLine]&e'',对于玩家&3[playerDisplayName]&e (&3[offon]&e).'
       noitem: '&c你手中没有任何物品.'
       removed: '&e物品描述第&6[line]&e行已从玩家&3[playerDisplayName]&e (&3[offon]&e)中移除.'
       inserted: '&e物品描述已插入第&6[line]&e行,对于玩家&3[playerDisplayName]&e (&3[offon]&e).'

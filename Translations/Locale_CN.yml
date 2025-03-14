@@ -551,7 +551,7 @@ command:
       BlockHitBox: ' &7高度: &f[height] &7长度: &f[length] &7宽度: &f[width]'
       BlockHitBoxHover: '&7上方距离: &f[top] &7下方距离: &f[bottom]'
       Books: ' &e书籍: &6[list]'
-      Enchant: '&6[名称]:&e[等级] '
+      Enchant: '&6[name]:&e[level] '
   blocknbt:
     help:
       info: '&e显示方块NBT信息'
@@ -1627,25 +1627,23 @@ command:
       public: ' &2[公共]'
       notPublic: ' &7[非公共]'
       reqPerm: ' &2[需要权限]'
-      noPerm: ' &7[没有权限]'
+      noPerm: ' &7[无需权限]'
       cancelEvent: ' &2[cancelEvent]'
       passEvent: ' &7[passEvent]'
       permHover: ' &e需要 &7[permission] &e权限才能放置此牌子'
       editSign: ' &e[编辑牌子行数]'
-      publicHover: |-
-        &e更改交互式命令的公共状态.
-        牌子的顶行为 &7[ic:[name]]
+      publicHover: "&e更改交互式命令的公共状态 \n牌子的顶行为 &7[ic:[name]]"
       createdPublic: '&e创建了新的交互式命令'
-      list: '&e[位置]. &6[name]'
-      listType: ' &e[类型]    '
+      list: '&e[place]. &6[name]'
+      listType: ' &e[type]    '
       editCommands: '&e编辑命令'
       editBlocks: ' &e编辑方块'
       addBlock: '&e添加你所看着的方块'
       addEntity: ' &e添加你所看着的实体'
       manageCommands: '&e切换到命令编辑器'
       manageBlockEnt: '&e切换到方块/实体编辑器'
-      locationList: '&6[类型]'
-      entityList: '&2[类型]'
+      locationList: '&6[type]'
+      entityList: '&2[type]'
       notPublicIc: '&c你不能使用它,它不是公共的'
       block: (方块)
       entity: (实体)
@@ -1681,7 +1679,7 @@ command:
       all: '&e所有人'
       removed: '&e你不再忽略 &6[playerDisplayName]'
       removedAll: '&e你不再忽略任何人'
-      list: '&e[位置]. [playerDisplayName]  '
+      list: '&e[place]. [playerDisplayName]  '
       ignoringYou: '&c[playerDisplayName] &e正在忽略你'
       empty: '&7忽略列表为空'
   importfrom:

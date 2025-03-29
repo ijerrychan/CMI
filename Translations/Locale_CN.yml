@@ -96,7 +96,7 @@ info:
   ArmorWillBreak: '!actionbar!&e您的[itemName]即将损坏! &e[current]&6/&e[max]'
   flyingToHigh: '&c您不能飞得太高,最大高度为 &6[max]&c!'
   specializedItemFail: '&c无法确定特定物品的需求值:&7[value]'
-  sunSpeeding: 睡眠 [count] 的 [total] [hour] 小时 [speed]X 速度
+  sunSpeeding: 睡眠 [count] / [total] [hour] 小时 [speed]X 速度
   sleepersRequired: '!actionbar!&f[sleeping]&7 人正在睡觉，&7加速夜晚共需 &f[required] &7人'
   sunSpeedingTitle: '&7[hour]'
   skippingNight: '!title!&7跳过整个夜晚'
@@ -153,7 +153,7 @@ info:
   vanishSymbolOff: ''
   afkSymbolOn: '&8[&7离开&8]&r'
   afkSymbolOff: ''
-  beeinfo: '!actionbar!&7蜂蜜等级:&e[level]&7/&e[maxlevel] &7内部的蜜蜂:&e[count]&7/&e[maxcount]'
+  beeinfo: '!actionbar!&7蜂蜜等级:&e[level]&7/&e[maxlevel] &7内部蜜蜂:&e[count]&7/&e[maxcount]'
   decoratedpotinfo: '!actionbar!&7内容: &e[items]'
   pvp:
     noGodDamage: '!actionbar!&c在无敌状态下无法对玩家造成伤害'
